@@ -82,25 +82,26 @@ $(function() {
           $("[name=send]").removeAttr("disabled");
         }, 1000);
         $('div.md-show').removeClass('md-show');
-        dataLayer.push({
-          'form_type': formType,
-          'event': "form_submit"
-        });
+        $('form').trigger("reset");
+        // dataLayer.push({
+        //   'form_type': formType,
+        //   'event': "form_submit"
+        // });
           // Отправка в базу данных
-          $.ajax({
-           type: 'POST',
-           url: 'db/registration.php',
-           dataType: 'json',
-           data: form.serialize(),
-           success: function(response) {
-             console.info(response);
-             console.log(form.serialize());
-             if (response.status == 'success') {
-              $('form').trigger("reset");
-              window.location.href = '/success';
-            }
-          }
-        });
+        //   $.ajax({
+        //    type: 'POST',
+        //    url: 'db/registration.php',
+        //    dataType: 'json',
+        //    data: form.serialize(),
+        //    success: function(response) {
+        //      console.info(response);
+        //      console.log(form.serialize());
+        //      if (response.status == 'success') {
+        //       $('form').trigger("reset");
+        //       // window.location.href = '/success';
+        //     }
+        //   }
+        // });
       },
       error: function(xhr, str) {
         console.log("Erorr")

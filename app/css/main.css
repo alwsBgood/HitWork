@@ -372,7 +372,7 @@ div[id*="modal_callback"] {
     background: #fff;
     background-size: cover;
     text-align: center; }
-  div[id*="modal_callback"] .form-wrap {
+  div[id*="modal_callback"] form {
     display: block;
     max-width: 360px;
     width: 100%;
@@ -380,7 +380,7 @@ div[id*="modal_callback"] {
     margin-right: auto;
     text-align: left; }
   div[id*="modal_callback"] .field + .field {
-    margin-top: 20px; }
+    margin-top: 30px; }
   div[id*="modal_callback"] .btn {
     display: block;
     margin: 40px auto 0;
