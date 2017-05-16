@@ -1,5 +1,29 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: "Acrom";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Acrom-Regular.woff2") format("woff2"), url("fonts/Acrom-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Acrom";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/Acrom-Bold.woff2") format("woff2"), url("fonts/Acrom-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Acrom";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/Acrom-ExtraBold.woff2") format("woff2"), url("fonts/Acrom-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/Roboto.woff2") format("woff2"), url("fonts/Roboto.woff") format("woff"); }
+  src: url("fonts/font-awesome/fontawesome-webfont.woff2") format("woff2"), url("fonts/font-awesome/fontawesome-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "FuturaFuturisC-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/FuturaFuturisC-Bold.woff2") format("woff2"), url("fonts/FuturaFuturisC-Bold.woff") format("woff"); }

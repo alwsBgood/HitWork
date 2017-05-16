@@ -125,7 +125,7 @@ $(function() {
 //  INPUT TEL MASK
 
 jQuery(function($){
- $("input[type='tel']").mask("+9 (999) 999-9999");
+ $("input[type='tel']").mask("+38 (099) 999-9999");
 });
 
 
@@ -198,65 +198,125 @@ $('.md-overlay').click(function() {
 
 //Sliders
 
-$('.slider').slick({
+$('.slider_08_video').slick({
   slidesToShow: 1,
   dots: true,
-  arrows: false,
+  arrows: true,
   infinite: true,
   slidesToScroll: 1,
   fade: true,
   adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-      }
+});
+
+$('.slider_08_msg').slick({
+  slidesToShow: 1,
+  dots: true,
+  arrows: true,
+  infinite: true,
+  slidesToScroll: 1,
+  fade: true,
+  adaptiveHeight: true,
+});
+
+
+
+
+// $('.slick-media').slick('unslick').slick('reinit');
+
+jQuery(document).ready(function($) {
+
+  function getSliderSettings(){
+    return {
+      slidesToShow: 1,
+      dots: true,
+      arrows: true,
+      infinite: true,
+      slidesToScroll: 1,
+      fade: true,
+      adaptiveHeight: true,
     }
-  ]
+  }
+
+  $('.tabs_controll li a').click(function(event) {
+    $('[class*="slider_08_"]').slick('slickGoTo', 0);
+    $('[class*="slider_08_"]').slick('unslick');
+    $('[class*="slider_08_"]').slick(getSliderSettings());
+  });
 });
 
-// Perfect Pxel
 
-$('body').each(function() {
-  var body = $(this);
-  var img_url = $(this).data('img');
-  var img = new Image();
-  img.src = img_url;
-  img.onload = function(){
-    var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
-    var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
-    body.append(ppbox);
-    body.append(ppbtn);
-  };
-});
-function myOff() {
-  var ppbtntext = $('#ppbtn').text();
-  if (ppbtntext == 'ON') {
-    $('#ppbtn').text('OFF');
-    $('#pp').css('display', 'none');
+//Tabs
+
+setTimeout(function(){
+  $('.tabs').tabslet({
+    animation: true,
+    active: 2
+  })
+})
+
+// Accordion
+
+$('.btn_open_more').click(function(event) {
+  event.preventDefault();
+  $(this).closest('.item').find('.closed').slideToggle();
+  $(this).toggleClass('opened');
+
+  if($(this).hasClass('opened')){
+    $(this).children('.text_btn').html('Скрыть');
+    $(this).children('.plus').html('-')
   } else {
-    $('#ppbtn').text('ON');
-    $('#pp')        .css({
-      ' z-index' : '1000000',
-      display: 'block'
+    $(this).children('.text_btn').html('Смотреть все');
+    $(this).children('.plus').html('+')
+  }
+});
+
+
+// Menu
+
+$(document).ready(function() {
+    (function() {
+      var i, resize;
+
+      i = setInterval(function() {
+        return $("#nav .wrapper").toggleClass("cross");
+    }, 1500);
+
+      $("#nav .wrapper").click(function() {
+        clearInterval(i);
+        if($('#nav').hasClass('open')){
+            return $("#nav .wrapper").addClass("cross");
+        } else {
+            return $("#nav .wrapper").removeClass("cross");
+        }
+    });
+      $('.callback').click(function(){
+        clearInterval(i);
+        $("#nav .wrapper").addClass("cross");
+      });
+  }).call(this);
+
+    $('#menu').click(function(){
+        $('#nav').toggleClass('open');
+        $('body').toggleClass('unscroll');
+        setTimeout(function() {
+          $('#nav .inner').toggleClass('open');
+        }, 600);
     });
 
-  }
-}
+    $('#nav li a').click(function(){
+      $('#nav').removeClass('open');
+      $('#nav .inner').removeClass('open');
+      $('body').removeClass('unscroll');
+      $("#nav .wrapper").removeClass("cross");
+    })
 
-$('html').keydown(function(){
-  var ppbtntext = $('#ppbtn').text();
-  if (event.keyCode == 81) {
-    if (ppbtntext == 'ON') {
-      $('#ppbtn').text('OFF');
-      $('#pp').css('display', 'none');
-    } else {
-      $('#ppbtn').text('ON');
-      $('#pp')        .css({
-        ' z-index' : '1000000',
-        display: 'block'
-      });
-    }
-  }
+    $('html').keydown(function(){
+      if (event.keyCode == 27) {
+        $('#nav').removeClass('open');
+        $('#nav .inner').removeClass('open');
+        $('body').removeClass('unscroll');
+        $("#nav .wrapper").removeClass("cross");
+      }
+    });
+
 });

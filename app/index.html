@@ -44,7 +44,7 @@
     <style>:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-left:-15px;margin-right:-15px}.col-1,.col-sm-1,.col-md-1,.col-lg-1,.col-2,.col-sm-2,.col-md-2,.col-lg-2,.col-3,.col-sm-3,.col-md-3,.col-lg-3,.col-4,.col-sm-4,.col-md-4,.col-lg-4,.col-5,.col-sm-5,.col-md-5,.col-lg-5,.col-6,.col-sm-6,.col-md-6,.col-lg-6,.col-7,.col-sm-7,.col-md-7,.col-lg-7,.col-8,.col-sm-8,.col-md-8,.col-lg-8,.col-9,.col-sm-9,.col-md-9,.col-lg-9,.col-10,.col-sm-10,.col-md-10,.col-lg-10,.col-11,.col-sm-11,.col-md-11,.col-lg-11,.col-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{float:left}.col-12{width:100%}.col-11{width:91.66666667%}.col-10{width:83.33333333%}.col-9{width:75%}.col-8{width:66.66666667%}.col-7{width:58.33333333%}.col-6{width:50%}.col-5{width:41.66666667%}.col-4{width:33.33333333%}.col-3{width:25%}.col-2{width:16.66666667%}.col-1{width:8.33333333%}.col-pull-12{right:100%}.col-pull-11{right:91.66666667%}.col-pull-10{right:83.33333333%}.col-pull-9{right:75%}.col-pull-8{right:66.66666667%}.col-pull-7{right:58.33333333%}.col-pull-6{right:50%}.col-pull-5{right:41.66666667%}.col-pull-4{right:33.33333333%}.col-pull-3{right:25%}.col-pull-2{right:16.66666667%}.col-pull-1{right:8.33333333%}.col-pull-0{right:auto}.col-push-12{left:100%}.col-push-11{left:91.66666667%}.col-push-10{left:83.33333333%}.col-push-9{left:75%}.col-push-8{left:66.66666667%}.col-push-7{left:58.33333333%}.col-push-6{left:50%}.col-push-5{left:41.66666667%}.col-push-4{left:33.33333333%}.col-push-3{left:25%}.col-push-2{left:16.66666667%}.col-push-1{left:8.33333333%}.col-push-0{left:auto}.col-offset-12{margin-left:100%}.col-offset-11{margin-left:91.66666667%}.col-offset-10{margin-left:83.33333333%}.col-offset-9{margin-left:75%}.col-offset-8{margin-left:66.66666667%}.col-offset-7{margin-left:58.33333333%}.col-offset-6{margin-left:50%}.col-offset-5{margin-left:41.66666667%}.col-offset-4{margin-left:33.33333333%}.col-offset-3{margin-left:25%}.col-offset-2{margin-left:16.66666667%}.col-offset-1{margin-left:8.33333333%}.col-offset-0{margin-left:0}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}</style>
 
     <!-- FONTS+HEADER -->
-    <style></style>
+    <style>@font-face{font-family:"Acrom";font-style:normal;font-weight:400;src:url(fonts/Acrom-Regular.woff2) format("woff2"),url(fonts/Acrom-Regular.woff) format("woff")}@font-face{font-family:"Acrom";font-style:normal;font-weight:700;src:url(fonts/Acrom-Bold.woff2) format("woff2"),url(fonts/Acrom-Bold.woff) format("woff")}@font-face{font-family:"Acrom";font-style:normal;font-weight:800;src:url(fonts/Acrom-ExtraBold.woff2) format("woff2"),url(fonts/Acrom-ExtraBold.woff) format("woff")}@font-face{font-family:"FontAwesome";font-style:normal;font-weight:400;src:url(fonts/font-awesome/fontawesome-webfont.woff2) format("woff2"),url(fonts/font-awesome/fontawesome-webfont.woff) format("woff")}@font-face{font-family:"FuturaFuturisC-Bold";font-style:normal;font-weight:400;src:url(fonts/FuturaFuturisC-Bold.woff2) format("woff2"),url(fonts/FuturaFuturisC-Bold.woff) format("woff")}</style>
 
     <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
     <script>!function(a){"use strict";function b(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function c(b,c){return a.localStorage&&localStorage[b+"_content"]&&localStorage[b+"_file"]===c}function d(b,d){if(a.localStorage&&a.XMLHttpRequest)c(b,d)?f(localStorage[b+"_content"]):e(b,d);else{var h=g.createElement("link");h.href=d,h.id=b,h.rel="stylesheet",h.type="text/css",g.getElementsByTagName("head")[0].appendChild(h),g.cookie=b}}function e(a,b){var c=new XMLHttpRequest;c.open("GET",b,!0),c.onreadystatechange=function(){4===c.readyState&&200===c.status&&(f(c.responseText),localStorage[a+"_content"]=c.responseText,localStorage[a+"_file"]=b)},c.send()}function f(a){var b=g.createElement("style");b.setAttribute("type","text/css"),g.getElementsByTagName("head")[0].appendChild(b),b.styleSheet?b.styleSheet.cssText=a:b.innerHTML=a}var g=a.document;a.loadCSS=function(a,b,c){var d,e=g.createElement("link");if(b)d=b;else{var f;f=g.querySelectorAll?g.querySelectorAll("style,link[rel=stylesheet],script"):(g.body||g.getElementsByTagName("head")[0]).childNodes,d=f[f.length-1]}var h=g.styleSheets;e.rel="stylesheet",e.href=a,e.media="only x",d.parentNode.insertBefore(e,b?d:d.nextSibling);var i=function(a){for(var b=e.href,c=h.length;c--;)if(h[c].href===b)return a();setTimeout(function(){i(a)})};return e.onloadcssdefined=i,i(function(){e.media=c||"all"}),e},a.loadLocalStorageCSS=function(e,f){c(e,f)||g.cookie.indexOf(e)>-1?d(e,f):b(a,"load",function(){d(e,f)})}}(this);</script>
@@ -62,64 +62,677 @@
 
 </head>
 <body data-img="img/land.jpg">
+<div class="main_wrap">
+    
 <div class="bar-long"></div>
 <div id="scrollup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.054 286.054"><path d="M143.027 0C64.04 0 0 64.04 0 143.027c0 78.996 64.04 143.027 143.027 143.027s143.027-64.03 143.027-143.027C286.054 64.05 222.014 0 143.027 0zm0 259.236c-64.183 0-116.21-52.026-116.21-116.21s52.027-116.2 116.21-116.2 116.21 52.018 116.21 116.2-52.027 116.21-116.21 116.21zm51.677-125.148h-24.86V89.392c0-4.934-3.996-8.94-8.94-8.94H125.15c-4.934 0-8.94 4.006-8.94 8.94v44.696H91.342c-9.698 0-13.667 6.463-8.822 14.338l51.686 51.096c4.845 7.884 12.783 7.884 17.637 0l51.678-51.096c4.863-7.875.894-14.338-8.814-14.338z"/></svg></div>
 
 
+<div id="sec_01">
+    <img src="img/sec_01-img.png" alt="" class="block-img">
+    <div id="nav">
+        <div class="wrapper">
+            <svg class="svg" id="menu" viewBox="0 0 800 600"><path class="path" d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path><path class="path" d="M300,320 L540,320" id="middle"></path><path class="path" d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+            </svg>
+        </div>
+        <div class="inner">
 
-<form  method="POST" class="form-inline db-form" action="javascript:void(null);">
+            <ul class=" navigation text--title">
+               <li><a href="#sec_05" class="scroll">О нас</a></li>
+               <li><a href="#sec_06" class="scroll">Тест</a></li>
+               <li><a href="#sec_08" class="scroll">Отзывы</a></li>
+           </ul>
 
-    <!-- Hidden DB Fields -->
-    <input type="hidden" name="registrationType" value="default_registration">
-    <input type="hidden" name="orderType" value="Zayavka">
-    <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
-    <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
-    <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
-    <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
-    <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
-    <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
-    <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
-    <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
-    <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
-    <input type="hidden" name="city" value="">
-    <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
-    <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
-    <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
-    <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
-    <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
-    <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
-
-    <!-- END Hidden DB Fields -->
-
-    <!-- Hidden Required Fields -->
-    <input type="hidden" name="project_name" value="CompanyName">
-    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
-    <input type="hidden" name="form_type" value="firstForm ">
-    <!-- END Hidden Required Fields -->
-
-    <span class="field">
-        <input type="text" class="form-control" name="name" required=""  placeholder="Ваше имя " />
-        <span class="bar"></span>
-    </span>
-
-    <span class="field">
-        <input type="email" required="" placeholder="Ваш E-Mail" name="email" class="form-control">
-        <span class="bar"></span>
-    </span>
+           <div class="phones_block_menu">
+               <a href="tel:+380501032222" class="tel text--title">+38 (050) 103 2222</a>
+                <a class="call_back flex md-trigger" data-modal="modal_callback">Обратный звонок</a>
+                <div class="clear"></div>
+            </div>
 
 
-    <span class="field">
-        <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
-        <span class="bar"></span>
-    </span>
+            <ul class="social">
+                <li><a target="_blank" href="https://www.facebook.com/hiitworks.ua/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/hiitworks.ua/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCFOV7VOd6RkVOoHr1TTohrQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 top">
+                <img src="img/logo.png" alt="Ойка" class="logo">
+                 <ul class="menu text--title">
+                    <li><a href="#sec_05" class="scroll">О нас</a></li>
+                    <li><a href="#sec_07" class="scroll">Отзывы</a></li>
+                    <li><a href="#sec_11" class="scroll">Контакты</a></li>
+                </ul>
+
+                <div class="phones_block">
+                    <a class="call_back flex md-trigger" data-modal="modal_callback">Обратный звонок</a>
+                    <a href="tel:+380501032222" class="tel text--title">+38 (050) 103 2222</a>
+                    <div class="clear"></div>
+                </div>
 
 
-    <button type="submit" class="btn" name="send" data-text="Перезвоните мне">Отправить</button>
 
-    <div class="clear"></div>
-</form>
+               <div class="clear"></div>
+           </div>
+           <div class="col-9">
+               <h1 class="text--header main_header">Красивая <br> фигура —</h1>
+               <p class="underheader title text--title">Без изнуряющих диет и ежедневных тренировок</p>
+               <div class="right_block mobile">
+                   <div class="item">
+                       <p class="text--title">Тренировки</p>
+                       <p class="text">всего по 45 минут</p>
+                   </div>
+                   <div class="item">
+                       <p class="text--title">Студия в центре</p>
+                       <p class="text">Киева</p>
+                   </div>
+                   <div class="item">
+                       <p class="text--title">Занятия для любого</p>
+                       <p class="text">уровня подготовки</p>
+                   </div>
+                   <div class="item">
+                       <p class="text--title">Постоянный контроль </p>
+                       <p class="text">тренера</p>
+                   </div>
+               </div>
+               <a class="md-trigger btn flex" data-modal="modal_callback">Хочу красивое тело</a>
+               <a href="#sec_02" class="scroll btn_dwn">крутить вниз</a>
+           </div>
+           <div class="col-3">
+               <div class="desctop right_block">
+                   <div class="item">
+                       <p class="text--title">Тренировки</p>
+                       <p class="text">всего по 45 минут</p>
+                   </div>
+                   <div class="item">
+                       <p class="text--title">Студия в центре</p>
+                       <p class="text">Киева</p>
+                   </div>
+                   <div class="item">
+                       <p class="text--title">Занятия для любого</p>
+                       <p class="text">уровня подготовки</p>
+                   </div>
+                   <div class="item">
+                       <p class="text--title">Постоянный контроль </p>
+                       <p class="text">тренера</p>
+                   </div>
+               </div>
+               <div class="clear"></div>
+           </div>
+       </div>
+   </div>
+</div>
 
 
+<div id="sec_02">
+    <div class="container">
+        <div class="row about_row">
+            <div class="col-11">
+                <p class="sec_number text--title">01</p>
+            </div>
+            <div class="col-1">
+                <p class="sec_text text--title">мечты и реальность</p>
+            </div>
+        </div>
+        <div class="row first_row">
+            <div class="col-6">
+                <img src="img/sec_02-img-1.png" alt="" class="sec_img-1">
+            </div>
+            <div class="col-6">
+                <h2 class="header">Ты — <br> потрясающая <br> красотка</h2>
+                <p class="title">C подтянутой фигурой и шикарной попой…</p>
+            </div>
+        </div>
+        <div class="row second_row">
+            <div class="col-6 col-offset-1">
+                <h3 class="header_sm">...Где-то <br> в своих мечтах. </h3>
+                <p class="title">Жаль, что в реальности ты:</p>
+                <ul class="list_item">
+                    <li>Cтесняешься выходить на пляж в открытом купальнике;</li>
+                    <li>Завидуешь всем девушкам, которые выглядят сексуально;</li>
+                    <li>Выбираешь одежду, которая скрывает недостатки твоей фигуры;</li>
+                    <li>Знаешь, как стать на фото, чтобы твоя попа выглядела лучше.</li>
+                </ul>
+            </div>
+            <div class="col-5 tr">
+                <img src="img/sec_02-img-2.png" alt="" class="sec_img-2">
+            </div>
+        </div>
+        <div class="row third_row">
+            <div class="col-5">
+                <img src="img/sec_02-img-3.png" alt="" class="sec_img-3 desctop">
+                <img src="img/sec_02-img-3.1.png" alt="" class="sec_img-3 mobile">
+                <div class="clear"></div>
+            </div>
+            <div class="col-7 tc">
+                <h3 class="header_sm">Вспомни</h3>
+                <p class="text">как смотрят мужчины на проходящую мимо <br> девушку с красивым телом. <br> Тебе всегда хотелось стать такой. </p>
+                <p class="title">Может, пришло время действовать?</p>
+                <a class="md-trigger btn flex" data-modal="modal_callback">Хочу красивое тело</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="sec_03">
+    <div class="container">
+        <div class="row about_row">
+            <div class="col-11">
+                <p class="sec_number text--title">02</p>
+            </div>
+            <div class="col-1">
+                <p class="sec_text text--title">Причины</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <h2 class="header">Хорошая  <br> фигура <br> — это  <br> свобода. </h2>
+                <p class="text--title text--gold">Получив красивое тело, <br> ты распрощаешься со своими <br> комплексами и станешь наконец <br> той, которой смотрят вслед <br> мужчины. Начни действовать <br> — и ты сможешь:</p>
+            </div>
+            <div class="col-4">
+                <div class="item">
+                    <p class="title">Наслаждаться <br> вниманием мужчин</p>
+                    <p class="text visible">Как приятно, когда парни придерживают дверь или уступают место в транспорте, когда несут вместо тебя тяжелые сумки!</p>
+                    <p class="text closed">  Заметь — эти преимущества куда чаще получают красивые девушки с упругой попой. Совпадение? Не думаю.</p>
+                    <a class="btn_open_more text--gold"><span class="text_btn">Смотреть все</span> <span class="plus flex">+</span></a>
+                </div>
+                <div class="item">
+                    <p class="title">Нравиться себе в зеркале</p>
+                    <p class="text visible">Бывают дни, когда смотришь в зеркало  и думаешь:”а я еще ничего!”. </p>
+                    <p class="text closed"> Но чаще  отражение пугает, а несовершенства  расстраивают....Измени себя, начни  действовать — и вскоре заметишь, что тебе нравится красотка по ту сторону зеркала!</p>
+                    <a class="btn_open_more text--gold"><span class="text_btn">Смотреть все</span> <span class="plus flex">+</span></a>
+                </div>
+                <div class="item">
+                    <p class="title">Чувствовать себя уверенно</p>
+                    <p class="text visible">Наша уверенность во многом зависит  от внешнего вида.</p>
+                    <p class="text closed">Конечно, на пляже можно надеть парео. А в спальне — выключить свет. Но куда приятней всегда чувствовать себя уверенной, здоровой и красивой. </p>
+                    <a class="btn_open_more text--gold"><span class="text_btn">Смотреть все</span> <span class="plus flex">+</span></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item">
+                    <p class="title">Носить абсолютно любую <br> одежду</p>
+                    <p class="text visible">Устала избегать обтягивающих платьев?  А может, давно мечтаешь о сексуальной попе в коротких шортиках?</p>
+                    <p class="text closed">Долой запреты! Займись собой — и одежда наконец будет сидеть на тебе лучше, чем на манекене. </p>
+                    <a class="btn_open_more text--gold"><span class="text_btn">Смотреть все</span> <span class="plus flex">+</span></a>
+                </div>
+                <div class="item">
+                    <p class="title">Быть ухоженной и привлекательной</p>
+                    <p class="text visible">Говорят, можно быть красоткой  при любой фигуре. </p>
+                    <p class="text closed">Но надень на всех девушек одинаковые майки и шорты  — и мы сразу увидим, кто уделяет  внимание не только лицу, но и телу. </p>
+                    <a class="btn_open_more text--gold"><span class="text_btn">Смотреть все</span> <span class="plus flex">+</span></a>
+                </div>
+                <div class="item">
+                    <p class="title">Найти достойного мужчину</p>
+                    <p class="text visible">Да, внутренний мир важен. Но знакомство мы все начинаем с оценки внешности. </p>
+                    <p class="text closed">Если ты пока свободна, не забывай  развиваться. Но помни — каждый мужчина хочет видеть рядом красивую женщину.</p>
+                    <a class="btn_open_more text--gold"><span class="text_btn">Смотреть все</span> <span class="plus flex">+</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_04">
+    <div class="container">
+        <div class="row first_row">
+            <div class="col-7 tc">
+                <h2 class="header">Ничего не менять <br> — проще. </h2>
+                <p class="title">Но скажи, что лучше:</p>
+                <p class="text">Всю жизнь мириться с этим отражением в зеркале <br> или начать создавать идеальную фигуру уже сегодня?</p>
+            </div>
+            <div class="col-5">
+                <img src="img/sec_04-img-1.png" alt="" class="sec_img-1">
+            </div>
+        </div>
+        <div class="row second_row">
+            <div class="col-6">
+                <img src="img/sec_04-img-2.png" alt="" class="sec_img-2">
+            </div>
+            <div class="col-6">
+                <h3 class="header_sm">Хочешь  <br> наконец обрести <br> свободу?</h3>
+                <p class="title">Приходи в HiitWorks — мы знаем, <br> как сделать тебя красивой.</p>
+                <a class="md-trigger btn flex" data-modal="modal_callback">Хочу красивое тело</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="sec_05">
+    <div class="container">
+        <div class="row about_row">
+            <div class="col-11">
+                <p class="sec_number text--title">03</p>
+            </div>
+            <div class="col-1">
+                <p class="sec_text text--title">О Hitworks</p>
+            </div>
+        </div>
+        <div class="row first_row">
+            <div class="col-5">
+                <h2 class="header">Что такое <br> HiitWorks.</h2>
+                <p class="title underheader">HiitWorks — это инновационный подход <br> к созданию красивого тела.</p>
+
+                <div class="item">
+                    <p class="text">Наши тренеры разработали и успешно используют специальные жиросжигающие тренировки и программы, которые помогают добиться идеальной фигуры. </p>
+
+                    <p class="text--title">Эти занятия ускоряют метаболизм.</p>
+                    <p class="text">И запускают процессы, эффект от которых длится <br> 48 часов после тренировки. Тренируйся 45 минут <br> — и худей 48 часов! </p>
+                </div>
+            </div>
+            <div class="col-7">
+                <img src="img/sec_05-img-1.png" alt="" class="sec_img-1">
+            </div>
+        </div>
+
+        <div class="row second_row">
+            <div class="col-4 tc">
+                <img src="img/sec_05-img-2.png" alt="" class="sec_img-2">
+                <div class="header_sm">Представь</div>
+                <p class="title">всего месяц — и ты уже увидишь <br> результат</p>
+            </div>
+            <div class="col-7 col-offset-1">
+                <div class="header_sm">Мы знаем, <br> как важно для тебя <br> видеть результат.</div>
+                <p class="text--title underheader">Знай, что уже через:</p>
+                <div class="item">
+                    <p class="title text--pink">2-3 недели тренировок:</p>
+                    <p class="text"><span class="text--title">Ты будешь лучше себя чувствовать,</span> улучшится настроение, <br> будешь крепче спать</p>
+                </div>
+                <div class="item">
+                    <p class="title text--pink">месяц тренировок:</p>
+                    <p class="text"><span class="text--title">Ты увидишь, как начнет трансформироваться твое тело:</span> руки станут <br> подтянутыми, талия более выраженной, а попа и ноги — упругими. <br> Ты заметишь, что коленки стали острее, увидишь более четкий <br> рисунок ключиц и скул. В такие моменты наши девочки часто <br> говорят: теперь хочу татуировку на бедре или линии бикини ;) </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="sec_06">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="header">Проблемы <br> с весом влияют</h2>
+                <p class="title">Не только на внешний вид, <br> но и на здоровье.</p>
+                <p class="text">Избыточная масса тела — причина многих <br> болезней и проблем в организме. </p>
+                <p class="text--pink">Рассчитай свой индекс массы тела <br> — узнай, здорова ли ты. </p>
+            </div>
+            <div class="col-6">
+                <div class="form_block">
+                    <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
+
+                        <!-- Hidden DB Fields -->
+                        <input type="hidden" name="registrationType" value="default_registration">
+                        <input type="hidden" name="orderType" value="Zayavka">
+                        <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                        <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                        <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                        <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                        <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                        <input type="hidden" name="city" value="">
+                        <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                        <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                        <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                        <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                        <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                        <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+
+                        <!-- END Hidden DB Fields -->
+
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="CompanyName">
+                        <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                        <input type="hidden" name="form_type" value="firstForm ">
+                        <!-- END Hidden Required Fields -->
+
+                        <span class="field">
+                            <label for="name_06">Имя</label>
+                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_06" type="text" class="form-control" name="name" required=""  placeholder="Как тебя зовут" />
+                            <span class="bar"></span>
+                        </span>
+
+                        <span class="field">
+                            <label for="mail_06">E-Mail</label>
+                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Адрес электронной почты'" type="email" required="" placeholder="Адрес электронной почты" name="email" id="mail_06" class="form-control">
+                            <span class="bar"></span>
+                        </span>
+
+
+                      <span class="field small_field">
+                          <label for="hight_06">Рост, см</label>
+                          <input id="hight_06" onfocus="this.placeholder = ''" onblur="this.placeholder = '0, см'" type="number" required="" placeholder="0, см" name="height" class="form-control">
+                          <span class="bar"></span>
+                      </span>
+
+                      <span class="field small_field">
+                          <label for="weight_06">Вес, кг</label>
+                          <input id="weight_06" onfocus="this.placeholder = ''" onblur="this.placeholder = '0, кг'" type="number" required="" placeholder="0, кг" name="weight" class="form-control">
+                          <span class="bar"></span>
+                      </span>
+
+
+
+
+
+                        <button type="submit" class="btn" name="send">Узнать результат</button>
+
+                        <div class="clear"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="sec_07">
+    <div class="container">
+        <div class="row about_row">
+            <div class="col-11">
+                <p class="sec_number text--title">04</p>
+            </div>
+            <div class="col-1">
+                <p class="sec_text text--title">Преимущества</p>
+            </div>
+        </div>
+        <div class="row first_row">
+            <div class="col-12 tc">
+                <h2 class="header">Преимущества <br> студии.</h2>
+            </div>
+        </div>
+        <div class="row second_row">
+            <div class="col-4">
+                <div class="item">
+                    <img src="img/sec_07-icon-1.png" alt="" class="icon">
+                    <p class="title">Тренировки <br> для любых целей <br> и уровней подготовки</p>
+                    <p class="text">У нас есть занятия для новичков <br> и продвинутых, для разных групп мышц и целей. Похудеть, набрать массу, получить красивый пресс или идеальную попу — мы знаем, как решить все эти задачи.</p>
+                </div>
+                <div class="item">
+                    <img src="img/sec_07-icon-4.png" alt="" class="icon">
+                    <p class="title">Датчик MyZone</p>
+                    <p class="text">Пока ты тренируешься, <br> специальный кардиодатчик <br> в районе солнечного сплетения <br> контролирует твой пульс. <br> Он должен находиться в зоне <br> жиросжигания — именно это делает наши тренировки такими <br> эффективными.</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="item">
+                    <img src="img/sec_07-icon-2.png" alt="" class="icon">
+                    <p class="title">Успех неизбежен</p>
+                    <p class="text">К нам приходят с разными <br> проблемами — лишний вес, <br> отсутствие попы, желание стать подтянутей и здоровее. Все, кто остается с нами, решают эти <br> проблемы очень быстро. В HIIT знают, как сделать девочек <br> красивыми! </p>
+                </div>
+                <div class="item">
+                    <img src="img/sec_07-icon-5.png" alt="" class="icon">
+                    <p class="title">Все занятия только <br> с тренером</p>
+                    <p class="text">Наши тренеры приходят <br> не “отработать смену”. Им нравится делать людей здоровыми <br> и красивыми. Поэтому все тренеры HiitWorks тщательно следят за тем, чтобы ты правильно выполняла упражнения, держала темп <br> и не перегружала сердце. </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="item">
+                    <img src="img/sec_07-icon-3.png" alt="" class="icon">
+                    <p class="title">Специальная тренировка <br> для девушек - Попа-класс</p>
+                    <p class="text">Мы создали специальную <br> тренировку для девушек — <br> попа-класс. Благодаря этим <br> тренировкам ты сможешь подтянуть ноги и попу и создать тот самый упругий орешек, о котором мечтают все девушки! </p>
+                </div>
+                <div class="item">
+                    <img src="img/sec_07-icon-6.png" alt="" class="icon">
+                    <p class="title">Индивидуальные <br> программы похудения</p>
+                    <p class="text">Мы разработали специальные <br> программы похудения, которые <br> позволяют терять вес без голода <br> и огромных нагрузок. Ты сможешь <br> с удовольствием заниматься...<br> и становиться стройнее. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_08">
+    <div class="container">
+        <div class="row about_row">
+            <div class="col-11">
+                <p class="sec_number text--title">05</p>
+            </div>
+            <div class="col-1">
+                <p class="sec_text text--title">Отзывы</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <h2 class="header">Вот <br> что говорят</h2>
+                <p class="title">Те, кто уже занимается с нами:</p>
+            </div>
+
+
+            <div class="col-7">
+                <div class="tabs">
+                    <ul class="tabs_controll">
+                        <li><a href="#tab-2">Сообщения /</a></li>
+                        <li><a class="active" href="#tab-1">Видео</a></li>
+                    </ul>
+
+                    <div id="tab-2">
+                        <div class="slider_08_msg">
+                            <div class="slide">
+                                <img src="img/testimonial-1.png" alt="" class="test_photo">
+                                <p class="title text--title">Имя Фамилия</p>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non consequat. Duis aute irure dolor in reprehenderit in</p>
+                            </div>
+                            <div class="slide">
+                                <img src="img/testimonial-1.png" alt="" class="test_photo">
+                                <p class="title text--title">Имя Фамилия</p>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non consequat. Duis aute irure dolor in reprehenderit in</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-1">
+                        <div class="slider_08_video">
+                            <div class="slide">
+                                <img src="img/video_pc.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="img/video_pc.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="sec_09">
+    <div class="container">
+        <div class="row about_row">
+            <div class="col-11">
+                <p class="sec_number text--title">06</p>
+            </div>
+            <div class="col-1">
+                <p class="sec_text text--title">Предложение</p>
+            </div>
+        </div>
+        <div class="row first_row">
+            <div class="col-6">
+                <img src="img/sec_09-img-1.png" alt="" class="sec_img-1">
+            </div>
+            <div class="col-6">
+                <h2 class="header">Мы знаем, <br> чего ты боишься</h2>
+                <p class="title">Мы прошли этот путь и были на твоем месте.</p>
+            </div>
+        </div>
+        <div class="row second_row">
+            <div class="col-6 col-offset-1">
+                <h3 class="header_sm">Кому-то <br> страшно...</h3>
+                <p class="title">Впервые прийти в зал</p>
+                <p class="text">Кто-то боится критики или грозного тренера. <br> Многим важно лично проверить все: от атмосферы  <br> в студии до чистоты шкафчика в раздевалке.</p>
+            </div>
+            <div class="col-5 tr">
+                <img src="img/sec_09-img-2.png" alt="" class="sec_img-2">
+            </div>
+        </div>
+        <div class="row third_row">
+            <div class="col-5">
+                <img src="img/sec_09-img-3.png" alt="" class="sec_img-3">
+            </div>
+            <div class="col-7 tc">
+                <div class="header_sm">Именно поэтому</div>
+                <div class="item">
+                    <p class="text--title"> HiitWorks создали для тебя пробную тренировку. </p>
+                    <p class="text">Приходи на пробное занятие —и поверь, тебе захочется <br> заниматься в нашей студии.</p>
+                </div>
+                <div class="item">
+                    <p class="title text--pink">Жми кнопку ниже и оставь свои контакты:</p>
+                    <p class="text">мы перезвоним, чтобы уточнить удобное время для тренировки.</p>
+                </div>
+                <a class="md-trigger btn flex" data-modal="modal_callback">Хочу на тренировку</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_10">
+    <div class="container">
+        <div class="row first_row">
+            <div class="col-5">
+                <h2 class="header">Первое <br> впечатление <br> — самое сильное.</h2>
+                <p class="title">Какое впечатление оставляешь о себе ты: <br> неуверенная девочка или потрясающая леди? </p>
+            </div>
+            <div class="col-7">
+                <img src="img/sec_10-img-1.png" alt="" class="sec_img-1">
+            </div>
+        </div>
+
+        <div class="row second_row">
+            <div class="col-6">
+                <img src="img/sec_10-img-2.png" alt="" class="sec_img-2">
+            </div>
+            <div class="col-6">
+                <div class="header_sm">Самооценка <br> девушки</div>
+                <p class="title">всегда зависит от ее внешности</p>
+                <p class="text">Поэтому внешние изменения тела зачастую влияют <br> на внутреннее состояние. Если ты хочешь всегда быть <br> уверенной в себе, любить каждый сантиметр тела <br> и чувствовать себя красивой — приходи в HiitWorks. <br> И кто знает, как изменится твоя жизнь ;) </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_11">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="header">Всегда можно </div>
+                <p class="title">...купить свободное платье и забыть <br> о тренировках. Но помни, что жизнь <br> — результат твоего выбора. </p>
+                <p class="text">Всю жизнь стесняться своего тела или наслаждаться <br> тонкой талией и подтянутой попой? </p>
+                <p class="title text--pink">Решать тебе...</p>
+            </div>
+            <div class="col-6">
+                <div class="form_block">
+                    <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
+
+                        <!-- Hidden DB Fields -->
+                        <input type="hidden" name="registrationType" value="default_registration">
+                        <input type="hidden" name="orderType" value="Zayavka">
+                        <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                        <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                        <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                        <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                        <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                        <input type="hidden" name="city" value="">
+                        <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                        <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                        <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                        <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                        <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                        <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+
+                        <!-- END Hidden DB Fields -->
+
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="CompanyName">
+                        <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                        <input type="hidden" name="form_type" value="firstForm ">
+                        <!-- END Hidden Required Fields -->
+
+                        <span class="field">
+                            <label for="name_11">Имя</label>
+                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_11" type="text" class="form-control" name="name" required=""  placeholder="Как тебя зовут" />
+                            <span class="bar"></span>
+                        </span>
+
+                        <span class="field">
+                            <label for="tel_11">Телефон</label>
+                            <input id="tel_11" placeholder="Твой номер телефона" type="tel" class="form-control" name="custom_tel" required="">
+                            <span class="bar"></span>
+                        </span>
+
+                        <button type="submit" class="btn" name="send">Хочу красивое тело</button>
+
+                        <div class="clear"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_12">
+    <div class="container">
+        <div class="row desctop">
+            <div class="col-3">
+                <img src="img/logo_btm.png" alt="" class="logo">
+            </div>
+            <div class="col-3">
+                <a href="https://www.google.com.ua/maps/place/Hiitworks/@50.4254019,30.5342128,18.91z/data=!4m13!1m7!3m6!1s0x40d4cf1a98f591a5:0xb201d076928c804e!2z0LLRg9C70LjRhtGPINCE0LLQs9C10L3QsCDQmtC-0L3QvtCy0LDQu9GM0YbRjywgMzYsINCa0LjRl9CyLCAwMTEzMw!3b1!8m2!3d50.4249317!4d30.5344498!3m4!1s0x0:0x463406b7fa0d840d!8m2!3d50.4254771!4d30.533682" class="place place_link">г. Киев <br> ул. Евгения Коновальца, 36</a>
+            </div>
+            <div class="col-3">
+                <a href="tel:+380501032222" class="tel place_link">+38 (050) 103 2222</a>
+                <ul class="social">
+                    <li><a target="_blank" href="https://www.facebook.com/hiitworks.ua/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/hiitworks.ua/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCFOV7VOd6RkVOoHr1TTohrQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <a class="md-trigger call_back flex" data-modal="modal_callback">Обратный звонок</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="row mobile">
+            <div class="col-6">
+                <img src="img/logo_btm.png" alt="" class="logo">
+            </div>
+            <div class="col-6">
+                <a href="https://www.google.com.ua/maps/place/Hiitworks/@50.4254019,30.5342128,18.91z/data=!4m13!1m7!3m6!1s0x40d4cf1a98f591a5:0xb201d076928c804e!2z0LLRg9C70LjRhtGPINCE0LLQs9C10L3QsCDQmtC-0L3QvtCy0LDQu9GM0YbRjywgMzYsINCa0LjRl9CyLCAwMTEzMw!3b1!8m2!3d50.4249317!4d30.5344498!3m4!1s0x0:0x463406b7fa0d840d!8m2!3d50.4254771!4d30.533682" class="place place_link">г. Киев <br> ул. Евгения Коновальца, 36</a>
+            </div>
+        </div>
+        <div class="row mobile">
+            <div class="col-6">
+                <a class="md-trigger call_back flex" data-modal="modal_callback">Обратный звонок</a>
+                <div class="clear"></div>
+            </div>
+
+            <div class="col-6">
+                <a href="tel:+380501032222" class="tel place_link">+38 (050) 103 2222</a>
+                <ul class="social">
+                    <li><a target="_blank" href="https://www.facebook.com/hiitworks.ua/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/hiitworks.ua/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCFOV7VOd6RkVOoHr1TTohrQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="container">
@@ -147,7 +760,7 @@
                 <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
             </span>
             <div class="titlebox">
-                <h2 class="colored">Заказ обратного звонка</h2>
+                <h2 class="header_sm">Заказ обратного звонка</h2>
             </div>
             <div>
                 <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
@@ -213,7 +826,7 @@
                 <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
             </span>
             <div class="titlebox">
-                <h2 class="title tc">Политика конфиденциальности</h2>
+                <h2 class="header_sm tc">Политика конфиденциальности</h2>
             </div>
             <div class="md_content tl">
                 <p>Ваша конфиденциальность очень важна для нас. Мы хотим, чтобы Ваша работа в Интернет по возможности была максимально приятной и полезной, и Вы совершенно спокойно использовали широчайший спектр информации, инструментов и возможностей, которые предлагает Интернет.</p>
@@ -242,7 +855,7 @@
                 <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
             </span>
             <div class="titlebox">
-                <h2 class="title tc">Отказ от ответственности</h2>
+                <h2 class="header_sm tc">Отказ от ответственности</h2>
             </div>
             <div class="md_content tl">
                 <p><strong>В соответствии с действующим законодательством</strong>, Администрация отказывается от каких-либо заверений и гарантий, предоставление которых может иным образом подразумеваться, и отказывается от ответственности в отношении Сайта, Содержимого и их использования.</p>
@@ -260,7 +873,7 @@
                 <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
             </span>
             <div class="titlebox">
-                <h2 class="title tc">Согласие с рассылкой</h2>
+                <h2 class="header_sm tc">Согласие с рассылкой</h2>
             </div>
             <div class="md_content tl">
                 <p>Заполняя форму на нашем сайте &mdash; вы соглашаетесь с нашей политикой конфиденциальности. Также вы соглашаетесь с тем, что мы имеем право разглашать ваши личные данные в следующих случаях:</p>
@@ -315,5 +928,7 @@
     </script>
     <!-- Load Scripts End -->
 
+
+</div>
 </body>
 </html>
