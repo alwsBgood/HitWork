@@ -236,6 +236,10 @@
   }
   #sec_04{
     padding-top: 60px;
+    text-align: center;
+    .second_row{
+      .btn{margin: 30px auto 0}
+    }
     .sec_img-1{
       width: 100%;
       max-width: 847px;
@@ -446,9 +450,20 @@
 
 
 @media (max-width: 500px) {
+  .btn, .call_back{
+    width: 100%;
+    max-width: 340px;
+    height: 50px;
+    border-radius: 33px;
+  }
   div[id*="modal_callback"]{
     max-width: 500px;
     min-width: 100%;
+    .btn, .call_back{
+      width: 100%;
+      max-width: 340px;
+      height: 50px;
+    }
   }
   #sec_02{
     .about_row{

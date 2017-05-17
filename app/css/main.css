@@ -262,7 +262,7 @@
     margin-bottom: 20px; }
 
 #sec_11 {
-  padding: 0px 0 100px; }
+  padding: 0px 0 70px; }
   #sec_11 .header {
     margin: 75px 0 20px; }
   #sec_11 .text {
@@ -275,7 +275,7 @@
       margin: 45px auto 0; }
 
 #sec_12 {
-  padding: 100px 0 195px; }
+  padding: 70px 0 105px; }
   #sec_12 .mobile {
     display: none; }
   #sec_12 .place_link {
@@ -347,7 +347,7 @@ footer {
   footer .logo_rezart {
     margin-top: 3px;
     margin-left: 0px;
-    width: 55px;
+    width: 48px;
     float: right; }
     footer .logo_rezart svg {
       fill: #fff;
@@ -821,7 +821,10 @@ input:-ms-input-placeholder {
   #sec_03 .col-4 + .col-4 {
     margin-top: 33px; }
   #sec_04 {
-    padding-top: 60px; }
+    padding-top: 60px;
+    text-align: center; }
+    #sec_04 .second_row .btn {
+      margin: 30px auto 0; }
     #sec_04 .sec_img-1 {
       width: 100%;
       max-width: 847px;
@@ -978,9 +981,19 @@ input:-ms-input-placeholder {
     top: 20px; } }
 
 @media (max-width: 500px) {
+  .btn, .call_back {
+    width: 100%;
+    max-width: 340px;
+    height: 50px;
+    -webkit-border-radius: 33px;
+    border-radius: 33px; }
   div[id*="modal_callback"] {
     max-width: 500px;
     min-width: 100%; }
+    div[id*="modal_callback"] .btn, div[id*="modal_callback"] .call_back {
+      width: 100%;
+      max-width: 340px;
+      height: 50px; }
   #sec_02 .about_row {
     margin-bottom: 40px; }
   #sec_05 .about_row {

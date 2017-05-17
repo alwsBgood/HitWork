@@ -489,4 +489,6 @@ path#middle {
   #sec_01 .top {
     margin-bottom: 100px; }
   #sec_01 .underheader {
-    margin: 20px 0 70px; } }
+    margin: 20px auto 70px; }
+  .about_row .sec_text {
+    display: none; } }
