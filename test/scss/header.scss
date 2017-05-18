@@ -1,0 +1,322 @@
+@import "bourbon";
+@import "vars.scss";
+
+body {
+	position: relative;
+	font: 15px/21px $main_font;
+	color: $main_text_color;
+    font-weight: 400;
+	background-color: #fff;
+}
+
+body.unscroll{
+	overflow: hidden;
+}
+
+.main_wrap{overflow:hidden;}
+
+.header{
+    font-family: $bold_font;
+    color: #352b33;
+    font-size: 60px;
+    line-height: 68px;
+    margin-left: -4px !important;
+}
+
+.header_sm{
+    font-family: $bold_font;
+    color: #352b33;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.title{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #352b33;
+}
+
+.text--header{
+    font-family: $bold_font;
+    color: #352b33;
+}
+
+.text--title{
+    font-weight: 700;
+    color: #352b33;
+}
+
+.text--gold{
+    color: $second_color;
+}
+
+.text--pink{
+    color: $main_color;
+}
+
+
+.md-modal.md-show{
+    opacity: 1;
+  }
+.md-modal{
+    opacity: 0;
+  }
+
+/* SCROLL BAR STYLES*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ /* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 20px rgba(0,0,0,  0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: $main_color;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $main_color;
+}
+
+#sec_01{
+    background-repeat: no-repeat;
+    background-position: top -30px center;
+    background-image: url(../img/bg.png);
+    position: relative;
+    padding: 140px 0 185px;
+
+    min-height: 100vh;
+
+    .logo{margin-bottom: 140px;}
+    .header_sm{margin-bottom: 245px;}
+
+    .menu{
+        font-size: 14px;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 30px;
+            top: -50px;
+            left: 0;
+            background-color: #352b33;
+        }
+        a{
+            color: #352b33;
+            &:hover{color: $main_color;}
+        }
+        li+li{margin-top: 8px;}
+    }
+
+    .social{
+      font-size: 18px;
+      position: relative;
+      &:before{
+          content: "";
+          position: absolute;
+          width: 2px;
+          height: 30px;
+          top: -50px;
+          left: 0;
+          background-color: #352b33;
+      }
+      a{
+          color: #352b33;
+          &:hover{color: $main_color;}
+      }
+      li+li{margin-top: 8px;}
+    }
+    .col-6{position: relative;}
+    .sec_text{
+        color: #352b33;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transform: rotate(90deg);
+        width: 300px;
+        letter-spacing: .2em;
+
+        position: absolute;
+        top: 140px;
+        right: -130px;
+    }
+
+    .result{
+        margin-top: 165px;
+        font-size: 36px;
+        line-height: 69px;
+        #result{
+            font-size: 120px;
+            position: relative;
+            display: inline-block;
+            margin: 0 0 0px 10px;
+            &:before{
+                content: "";
+                position: absolute;
+                width: 46px;
+                height: 6px;
+                background-color: #352b33;
+                bottom: 0;
+                right: -85px;
+            }
+        }
+    }
+
+    .item{
+        margin: 15px 0 155px 95px;
+        max-width: 380px;
+        .title{margin-bottom: 20px;}
+    }
+
+    .btn_back{
+        float: right;
+        img{margin: 0 0 -4px 8px}
+        &:hover{color: $main_color;}
+    }
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 15px 0 15px;
+  background-color: #202020;
+  .politics{
+    margin-top: 13px;
+    a{
+      color: #65666a;
+      font-size: 15px;
+    }
+    a:hover{color: $main_color;}
+    a+a{margin-left: 10px;}
+  }
+  .logo_rezart{
+    margin-top: 3px;
+    margin-left: 0px;
+    width: 48px;
+    // margin-right: 20px;
+    float: right;
+    svg{
+      fill: #fff;
+      transition: fill .3s;
+    }
+    &:hover{
+      svg{
+        fill: $main_color;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    #sec_01{
+        padding-bottom: 100px;
+        .item{margin-left: 30px;}
+        .sec_text{display: none}
+        .logo{margin-bottom: 100px;}
+        .header_sm{margin-bottom: 350px;}
+        .result{
+            margin-top: 140px;
+            #result{
+                font-size: 95px;
+                &:before{display: none}
+            }
+        }
+    }
+  footer{
+    .politics a{
+      font-size: 13px;
+    }
+  }
+}
+
+
+@media screen and (max-height: 760px){
+  .md_large .md_content {max-height: 320px;}
+}
+
+@media (max-width: 767px) {
+  #sec_01{
+    background-position: top -200px center;
+    padding-top: 20px;
+    .logo{margin-bottom: 105px;}
+    .header_sm{margin-bottom: 350px;}
+    .sec_text{display: none}
+    .result{
+        margin-left: 20px;
+        margin-top: 100px;
+        #result{
+            font-size: 62px;
+            &:before{display: none}
+        }
+    }
+    .item{
+        margin-left: 20px;
+        margin-bottom: 80px;
+        .text{font-size: 14px;}
+    }
+  }
+  footer{
+    text-align: center;
+    [class*='col-']{width: 100%;}
+    .politics{
+      a{
+         font-size: 14px;
+         display: block;
+         text-align: center;
+       }
+     a+a{margin-left: 0 }
+    }
+    .logo_rezart{
+      display: inline-block;
+      float: none;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  }
+  div[id*='modal_politics']{
+    h2{padding-top: 70px;}
+    .btn_close_modal{
+      top: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+    [class*='col-']{width: 100%;}
+    #sec_01{
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-image: url(../img/bg-mob.png);
+      padding-top: 20px;
+      .menu{display: none;}
+      .logo{margin-bottom: 45px;}
+      .header_sm{margin-bottom: 40px;}
+      .result{
+          margin-left: 0px;
+          margin-top: 0;
+          #result{
+              font-size: 80px;
+              &:before{display: none}
+          }
+      }
+      .item{
+        margin-left: 0px;
+        margin-bottom: 60px;
+    }
+      .btn_back{float: left;}
+      .sec_text{top: -45px;}
+    }
+}
+
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa-instagram:before{content:"\f16d"}
+.fa-facebook:before{content:"\f09a"}
+.fa-youtube-play:before{content:"\f16a"}

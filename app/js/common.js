@@ -18,15 +18,20 @@ $(function() {
    var loc = ymaps.geolocation.city+', '+ymaps.geolocation.region+', '+ymaps.geolocation.country;
    $('[name=city]').val(loc);
    var msg = btn.closest('form').find('input, textarea, select');
-   var short_msg = btn.closest('form').find('[name=project_name], [name=admin_email], [name=form_subject], [name=city], [name=page_url], [name=user_agent], [type="text"], [type="email"], [type="tel"]');
+   var short_msg = btn.closest('form').find('[name=project_name], [name=admin_email], [name=form_subject], [name=city], [name=page_url], [name=user_agent], [type="text"], [type="email"], [type="tel"], [name=weight], [name=height]');
    var msg = btn.closest('form').find('input, textarea, select');
    var send_btn = btn.closest('form').find('[name=send]');
    var send_adress = btn.closest('form').find('[name=send_adress]').val();
    var send_options = btn.closest('form').find('[name=campaign_token]');;
    var formType = btn.closest('form').find('[name=form_type]').val();
    var redirect = btn.closest('form').find('[name=redirect]').val();
-   var goal = btn.closest('form').find('[name=goal]').val();
+   var test_form = btn.closest('form').find('[name=test_form]').val();
    var alertImage = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.1 286.1"><path d="M143 0C64 0 0 64 0 143c0 79 64 143 143 143 79 0 143-64 143-143C286.1 64 222 0 143 0zM143 259.2c-64.2 0-116.2-52-116.2-116.2S78.8 26.8 143 26.8s116.2 52 116.2 116.2S207.2 259.2 143 259.2zM143 62.7c-10.2 0-18 5.3-18 14v79.2c0 8.6 7.8 14 18 14 10 0 18-5.6 18-14V76.7C161 68.3 153 62.7 143 62.7zM143 187.7c-9.8 0-17.9 8-17.9 17.9 0 9.8 8 17.8 17.9 17.8s17.8-8 17.8-17.8C160.9 195.7 152.9 187.7 143 187.7z" fill="#E2574C"/></svg>';
+
+
+   var man_weight = Number($('[name=weight]').val());
+   var man_height = Number($('[name=height]').val())/100;
+   var man_health_number = man_weight/Math.pow(man_height,2);
 
    localStorage.name = form.find('input[name="name"]').val();
    localStorage.email = form.find('input[type="email"]').val();
@@ -65,13 +70,6 @@ $(function() {
     $(send_btn).each(function() {
       $(this).attr('disabled', true);
     });
-     // Отправка в Google sheets
-     $.ajax({
-      type: 'POST',
-      url: '',
-      dataType: 'json',
-      data: msg,
-    });
     // Отправка на почту
     $.ajax({
       type: 'POST',
@@ -83,6 +81,23 @@ $(function() {
         }, 1000);
         $('div.md-show').removeClass('md-show');
         $('form').trigger("reset");
+        console.log(man_health_number);
+        if(test_form == 1) {
+          if(man_health_number <= 19) {
+            window.location.href = '/test/index.html'
+          } else if(19 < man_health_number <= 24) {
+            window.location.href = '/test/index_19-24.html'
+          } else if(25 < man_health_number <= 30) {
+            window.location.href = '/test/index_25-30.html'
+          } else if(31 < man_health_number <= 40) {
+            window.location.href = '/test/index_31-40.html'
+          } else {
+            window.location.href = '/test/index_40.html'
+          }
+        } else {
+          window.location.href = '/success'
+        }
+
         // dataLayer.push({
         //   'form_type': formType,
         //   'event': "form_submit"

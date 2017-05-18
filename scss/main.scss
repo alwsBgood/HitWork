@@ -200,7 +200,7 @@
 #sec_07{
   padding: 25px 0 40px;
   .about_row{margin-bottom: 80px;}
-  .header{margin-bottom: 77px;}
+  .header{margin-bottom: 27px;}
   .item{
     position: relative;
     padding-left: 70px;
@@ -212,7 +212,7 @@
     }
     .title{margin-bottom: 15px;}
   }
-  .item+.item{margin-top: 50px;}
+  .item{margin-top: 50px;}
 }
 
 #sec_08{
@@ -256,6 +256,7 @@
       }
     }
   }
+  video{width: 100%;}
   [class*='slider_08_']:before{
     content: "";
     position: absolute;
@@ -279,6 +280,7 @@
   .slick-prev{
     right: 60px;
   }
+  .slick-arrow{z-index: 10;}
 }
 
 #sec_09{

@@ -199,6 +199,9 @@
 @media (max-width: 767px) {
   [class*='col-']{width: 100%;}
   br{display: none;}
+  .about_row{
+    margin-bottom: 30px !important;
+  }
   #sec_02{
     .first_row{
       .header{
@@ -272,7 +275,7 @@
       display: none
     }
     .first_row{
-      .header{margin-top: 40px;}
+      .header{margin-top: 0px;}
     }
     .second_row{
       .header_sm{margin-top: 0 !important;}
@@ -298,7 +301,6 @@
         margin-bottom: 20px;
       }
     }
-    .col-4+.col-4{margin-top: 50px;}
   }
   #sec_08{
     .header{margin-top: 0;}
