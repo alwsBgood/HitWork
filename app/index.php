@@ -7,7 +7,13 @@
 <html class="no-js" lang="ru">
 
 <head>
-
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W7Z64LB');</script>
+<!-- End Google Tag Manager -->
     <meta charset="utf-8">
 
     <title>HiitWorks</title>
@@ -62,8 +68,12 @@
 
 </head>
 <body data-img="img/land.jpg">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7Z64LB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="main_wrap">
-    
+
 <div class="bar-long"></div>
 <div id="scrollup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.054 286.054"><path d="M143.027 0C64.04 0 0 64.04 0 143.027c0 78.996 64.04 143.027 143.027 143.027s143.027-64.03 143.027-143.027C286.054 64.05 222.014 0 143.027 0zm0 259.236c-64.183 0-116.21-52.026-116.21-116.21s52.027-116.2 116.21-116.2 116.21 52.018 116.21 116.2-52.027 116.21-116.21 116.21zm51.677-125.148h-24.86V89.392c0-4.934-3.996-8.94-8.94-8.94H125.15c-4.934 0-8.94 4.006-8.94 8.94v44.696H91.342c-9.698 0-13.667 6.463-8.822 14.338l51.686 51.096c4.845 7.884 12.783 7.884 17.637 0l51.678-51.096c4.863-7.875.894-14.338-8.814-14.338z"/></svg></div>
 
@@ -390,7 +400,7 @@
                         <!-- END Hidden DB Fields -->
 
                         <!-- Hidden Required Fields -->
-                        <input type="hidden" name="project_name" value="CompanyName">
+                        <input type="hidden" name="project_name" value="HiitWorks Grils">
                         <input type="hidden" name="admin_email" value="hiitworks22@gmail.com">
                         <input type="hidden" name="form_type" value="firstForm ">
                         <input type="hidden" name="test_form" value="1">
@@ -538,16 +548,19 @@
                                 <img src="img/testimonial-2.png" alt="" class="test_photo">
                                 <p class="title text--title">Лена Пономаренко</p>
                                 <p class="text">Крутая студия во всем: от дизайна помещений до суперпрофи-тренеров. Все продумано до мелочей, атмосфера очень дружественная. Интересно было наблюдать за своим пульсом во время занятия... Хоть тренер и дает всем одинаковые упражнения, интенсивность для каждого разная (своя). Короче, персонализированный подход 😊 <br><br> Это прям очень круто! Я такого нигде не видела)</p>
+                                <a target="_blank" href="https://www.facebook.com/ponomarlera" class="fb_link">Facebook</a>
                             </div>
                             <div class="slide">
                                 <img src="img/testimonial-3.png" alt="" class="test_photo">
                                 <p class="title text--title">Елена Цапко</p>
                                 <p class="text">Студия HIITWORKS - новый взгляд на интервальную тренировку! <br> Понравилось: <br><br> - На большом экране можно отследить реакцию своего организма (пульс, степень нагрузки от максимально возможной, количество спаленных калорий) на нагрузку.  <br><br> - Зал, оснащенный «по последнему слову техники»: от TRX петлей до беговых дорожек. <br><br> - Профессиональный подход к построению тренировки <br><br> - И супер-интенсивный тренинг WORKS1 от Ярослава Сойникова!  <br><br> - Уникальная атмосфера заведения, попадая в которую – хочется задержаться еще на пару тренировок! <br> 5 из 5 !</p>
+                                <a target="_blank" href="https://www.facebook.com/helena.tsupko" class="fb_link">Facebook</a>
                             </div>
                             <div class="slide">
                                 <img src="img/testimonial-1.png" alt="" class="test_photo">
                                 <p class="title text--title">Ирина Ставицкая</p>
                                 <p class="text">После того, как в жизни появляется Hiitworks, твоя жизнь меняется.. Однозначно! Появляется новинка в жизни, сорокапятиминутная дневная встряска и взрыв)) <br><br> Чего только стоят ядерные отжимания, становая тяга с гирей (с которой занимались когда-то наши папы), приседания с розовой штангой, толкание тачки на носках, гребля, боковая планка в миллиона   вариаций и... ещё много-много чего другого-невероятного.. <br><br>Потом ты понимаешь, что Hiitworks постепенно становится твоим персональным наркотиком. Хорошим и качественным. Причём таким, который благоприятно влияет на абсолютно все что есть в наличии в тебе..  <br><br> Каждая тренировка не похожа на предыдущие. В процессе тренировки, бывает, кажется, - сил больше нет... Но после ее окончания понимаешь, что сил стало намного больше.. Парадокс.. Вот такое творит с нами #HiitWorks  Живите сто лет!!</p>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100001187143680" class="fb_link">Facebook</a>
                             </div>
                         </div>
                     </div>
@@ -683,7 +696,7 @@
                         <!-- END Hidden DB Fields -->
 
                         <!-- Hidden Required Fields -->
-                        <input type="hidden" name="project_name" value="CompanyName">
+                        <input type="hidden" name="project_name" value="HiitWorks Grils">
                         <input type="hidden" name="admin_email" value="hiitworks22@gmail.com">
                         <input type="hidden" name="form_type" value="firstForm ">
                         <!-- END Hidden Required Fields -->
@@ -819,7 +832,7 @@
                     <!-- END Hidden DB Fields -->
 
                     <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="CompanyName">
+                    <input type="hidden" name="project_name" value="HiitWorks Grils">
                     <input type="hidden" name="admin_email" value="hiitworks22@gmail.com">
                     <input type="hidden" name="form_type" value="firstForm ">
                     <!-- END Hidden Required Fields -->
@@ -886,7 +899,7 @@
                     <!-- END Hidden DB Fields -->
 
                     <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="CompanyName">
+                    <input type="hidden" name="project_name" value="HiitWorks Grils">
                     <input type="hidden" name="admin_email" value="hiitworks22@gmail.com">
                     <input type="hidden" name="form_type" value="firstForm ">
                     <!-- END Hidden Required Fields -->

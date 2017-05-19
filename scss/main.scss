@@ -224,15 +224,15 @@
   }
   .tabs_controll{
     position: absolute;
-    bottom: 45px;
-    left: -75px;
+    bottom: 65px;
+    left: -80px;
     transform: rotate(-90deg);
     li{
       display: inline-block;
     }
     // li+li{margin-left: 20px;}
     a{
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 400;
       color: #352b33;
     }
@@ -246,13 +246,13 @@
   .slider_08_msg{
     .slide{
       background-color: #f9f9fb;
-      padding: 60px 60px 60px 200px;
+      padding: 60px 60px 60px 170px;
       position:relative;
       .title{margin-bottom: 10px;}
       img{
         position: absolute;
         top: 60px;
-        left: 60px;
+        left: 40px;
       }
     }
   }
@@ -266,6 +266,17 @@
     right: -1px;
     background: #fff;
     z-index: 3;
+  }
+
+  .fb_link{
+    font-size: 13px;
+    margin-top: 35px;
+    display: block;
+    text-decoration: underline;
+    color: $main_text_color;
+    &:hover{
+      color: $main_color;
+    }
   }
   .slick-next, .slick-prev{
     position: absolute;

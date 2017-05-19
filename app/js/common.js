@@ -84,15 +84,15 @@ $(function() {
         console.log(man_health_number);
         if(test_form == 1) {
           if(man_health_number <= 19) {
-            window.location.href = '/test/index.html'
-          } else if(19 < man_health_number <= 24) {
-            window.location.href = '/test/index_19-24.html'
-          } else if(25 < man_health_number <= 30) {
-            window.location.href = '/test/index_25-30.html'
-          } else if(31 < man_health_number <= 40) {
-            window.location.href = '/test/index_31-40.html'
+            window.location.href = '/test/index.html?man_health_number='+man_health_number;
+          } else if(19 < man_health_number && man_health_number <= 24) {
+            window.location.href = '/test/index_19-24.html?man_health_number='+man_health_number;
+          } else if(25 < man_health_number && man_health_number <= 30) {
+            window.location.href = '/test/index_25-30.html?man_health_number='+man_health_number;
+          } else if(31 < man_health_number && man_health_number <= 40) {
+            window.location.href = '/test/index_31-40.html?man_health_number='+man_health_number;
           } else {
-            window.location.href = '/test/index_40.html'
+            window.location.href = '/test/index_40.html?man_health_number='+man_health_number;
           }
         } else {
           window.location.href = '/success'

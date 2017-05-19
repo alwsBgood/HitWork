@@ -181,29 +181,29 @@
     position: relative; }
   #sec_08 .tabs_controll {
     position: absolute;
-    bottom: 45px;
-    left: -75px;
+    bottom: 65px;
+    left: -80px;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg); }
     #sec_08 .tabs_controll li {
       display: inline-block; }
     #sec_08 .tabs_controll a {
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 400;
       color: #352b33; }
     #sec_08 .tabs_controll .active a {
       font-weight: 700; }
   #sec_08 .slider_08_msg .slide {
     background-color: #f9f9fb;
-    padding: 60px 60px 60px 200px;
+    padding: 60px 60px 60px 170px;
     position: relative; }
     #sec_08 .slider_08_msg .slide .title {
       margin-bottom: 10px; }
     #sec_08 .slider_08_msg .slide img {
       position: absolute;
       top: 60px;
-      left: 60px; }
+      left: 40px; }
   #sec_08 video {
     width: 100%; }
   #sec_08 [class*='slider_08_']:before {
@@ -215,6 +215,14 @@
     right: -1px;
     background: #fff;
     z-index: 3; }
+  #sec_08 .fb_link {
+    font-size: 13px;
+    margin-top: 35px;
+    display: block;
+    text-decoration: underline;
+    color: #8a8a8a; }
+    #sec_08 .fb_link:hover {
+      color: #dfafbd; }
   #sec_08 .slick-next, #sec_08 .slick-prev {
     position: absolute;
     bottom: initial;
