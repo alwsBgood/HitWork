@@ -5,6 +5,10 @@ if (localStorage.name && localStorage.email && localStorage.phone)  {
   $('input[type="tel"]').val(localStorage.phone);
 }
 
+// if (localStorage.email != "undefined"){$('input[type="email"]').val(localStorage.email);}
+// if (localStorage.name != "undefined"){$('input[name="name"]').val(localStorage.name);}
+// if (localStorage.phone != "undefined"){$('input[type="tel"]').val(localStorage.phone);}
+
 $(function() {
   $("[name=send]").click(function (e) {
    var btn = $(this);
