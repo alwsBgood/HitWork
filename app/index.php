@@ -411,12 +411,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="bar"></span>
                         </span>
 
-                        <span class="field">
+                        <!-- <span class="field">
                             <label for="tel_06">Телефон</label>
                             <input id="tel_06" placeholder="Твой номер телефона" type="tel" class="form-control" name="custom_tel" required="">
                             <span class="bar"></span>
                         </span>
-
+ -->
                         <span class="field">
                             <label for="mail_06">E-Mail</label>
                             <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Адрес электронной почты'" type="email" required="" placeholder="Адрес электронной почты" name="email" id="mail_06" class="form-control">
