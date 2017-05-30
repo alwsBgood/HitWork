@@ -203,11 +203,30 @@ body.unscroll{
   .tel{
     display: block;
     float: none !important;
-    margin: 80px 0 0 !important;
   }
   .call_back{
     margin: 0px auto 10px !important;
     float: none !important;
+  }
+
+  .place_link{
+    color: #8a8a8a;
+    position: relative;
+    padding-left: 30px;
+    display: block;
+    margin: 80px auto 0 !important;
+    max-width: 310px;
+    &:hover{
+      color: $main_color;
+    }
+  }
+  .place:before{
+    width: 12px;
+    height: 18px;
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url(../img/place.png)
   }
 
   .social{

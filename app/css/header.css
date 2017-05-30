@@ -174,11 +174,26 @@ body.unscroll {
     transition: opacity .4s; }
   #nav .tel {
     display: block;
-    float: none !important;
-    margin: 80px 0 0 !important; }
+    float: none !important; }
   #nav .call_back {
     margin: 0px auto 10px !important;
     float: none !important; }
+  #nav .place_link {
+    color: #8a8a8a;
+    position: relative;
+    padding-left: 30px;
+    display: block;
+    margin: 80px auto 0 !important;
+    max-width: 310px; }
+    #nav .place_link:hover {
+      color: #dfafbd; }
+  #nav .place:before {
+    width: 12px;
+    height: 18px;
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url(../img/place.png); }
   #nav .social {
     font-size: 18px;
     margin-top: 5px; }
