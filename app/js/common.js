@@ -1,13 +1,6 @@
-if (localStorage.name && localStorage.email && localStorage.phone)  {
-  // запись сохраненных данных сразу в поля, если надо
-  $('input[name="name"]').val(localStorage.name);
-  $('input[type="email"]').val(localStorage.email);
-  $('input[type="tel"]').val(localStorage.phone);
-}
-
-// if (localStorage.email != "undefined"){$('input[type="email"]').val(localStorage.email);}
-// if (localStorage.name != "undefined"){$('input[name="name"]').val(localStorage.name);}
-// if (localStorage.phone != "undefined"){$('input[type="tel"]').val(localStorage.phone);}
+if (localStorage.email != "undefined"){$('input[type="email"]').val(localStorage.email);}
+if (localStorage.name != "undefined"){$('input[name="entry.1200472874"]').val(localStorage.name);}
+if (localStorage.phone != "undefined"){$('input[type="tel"]').val(localStorage.phone);}
 
 $(function() {
   $("[name=send]").click(function (e) {
@@ -38,7 +31,7 @@ $(function() {
    var man_height = Number($('[name=height]').val())/100;
    var man_health_number = man_weight/Math.pow(man_height,2);
 
-   localStorage.name = form.find('input[name="name"]').val();
+   localStorage.name = form.find('input[name="entry.1200472874"]').val();
    localStorage.email = form.find('input[type="email"]').val();
    localStorage.phone = form.find('input[type="tel"]').val();
 
@@ -74,6 +67,12 @@ $(function() {
    if (!(error == 1)) {
     $(send_btn).each(function() {
       $(this).attr('disabled', true);
+    });
+    //Отправка в Google Docs
+    $.ajax({
+    type: 'POST',
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLScsbVZJnCGBRwpiiywk70xbPJ07bwDEaDgYq7tYQrJPQ_nrgA/formResponse',
+    data: msg
     });
     // Отправка на почту
     $.ajax({

@@ -414,19 +414,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <span class="field">
                             <label for="name_06">Имя</label>
-                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_06" type="text" class="form-control" name="name" required=""  placeholder="Как тебя зовут" />
+                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_06" type="text" class="form-control" name="entry.1200472874" required=""  placeholder="Как тебя зовут" />
                             <span class="bar"></span>
                         </span>
 
                         <!-- <span class="field">
                             <label for="tel_06">Телефон</label>
-                            <input id="tel_06" placeholder="Твой номер телефона" type="tel" class="form-control" name="custom_tel" required="">
+                            <input id="tel_06" placeholder="Твой номер телефона" type="tel" class="form-control" name="entry.1379813596" required="">
                             <span class="bar"></span>
                         </span>
  -->
                         <span class="field">
                             <label for="mail_06">E-Mail</label>
-                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Адрес электронной почты'" type="email" required="" placeholder="Адрес электронной почты" name="email" id="mail_06" class="form-control">
+                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Адрес электронной почты'" type="email" required="" placeholder="Адрес электронной почты" name="entry.1560393608" id="mail_06" class="form-control">
                             <span class="bar"></span>
                         </span>
 
@@ -711,19 +711,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <span class="field">
                             <label for="name_11">Имя</label>
-                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_11" type="text" class="form-control" name="name" required=""  placeholder="Как тебя зовут" />
+                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_11" type="text" class="form-control" name="entry.1200472874" required=""  placeholder="Как тебя зовут" />
                             <span class="bar"></span>
                         </span>
 
                         <span class="field">
                             <label for="mail_11">E-Mail</label>
-                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Адрес электронной почты'" type="email" required="" placeholder="Адрес электронной почты" name="email" id="mail_11" class="form-control">
+                            <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Адрес электронной почты'" type="email" required="" placeholder="Адрес электронной почты" name="entry.1560393608" id="mail_11" class="form-control">
                             <span class="bar"></span>
                         </span>
 
                         <span class="field">
                             <label for="tel_11">Телефон</label>
-                            <input id="tel_11" placeholder="Твой номер телефона" type="tel" class="form-control" name="custom_tel" required="">
+                            <input id="tel_11" placeholder="Твой номер телефона" type="tel" class="form-control" name="entry.1379813596" required="">
                             <span class="bar"></span>
                         </span>
 
@@ -847,13 +847,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <span class="field">
                         <label for="name_cb">Имя</label>
-                        <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_cb" type="text" class="form-control" name="name" required=""  placeholder="Как тебя зовут" />
+                        <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_cb" type="text" class="form-control" name="entry.1200472874" required=""  placeholder="Как тебя зовут" />
                         <span class="bar"></span>
                     </span>
 
                     <span class="field">
                         <label for="tel_cb">Телефон</label>
-                        <input id="tel_cb" placeholder="Твой номер телефона" type="tel" class="form-control" name="custom_tel" required="">
+                        <input id="tel_cb" placeholder="Твой номер телефона" type="tel" class="form-control" name="entry.1379813596" required="">
                         <span class="bar"></span>
                     </span>
 
@@ -914,19 +914,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <span class="field">
                         <label for="name_or">Имя</label>
-                        <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_or" type="text" class="form-control" name="name" required=""  placeholder="Как тебя зовут" />
+                        <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как тебя зовут'" id="name_or" type="text" class="form-control" name="entry.1200472874" required=""  placeholder="Как тебя зовут" />
                         <span class="bar"></span>
                     </span>
 
                     <span class="field">
                         <label for="mail_or">E-Mail</label>
-                        <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Адрес электронной почты'" type="email" required="" placeholder="Адрес электронной почты" name="email" id="mail_or" class="form-control">
+                        <input onfocus="this.placeholder = ''" onblur="this.placeholder = 'Адрес электронной почты'" type="email" required="" placeholder="Адрес электронной почты" name="entry.1560393608" id="mail_or" class="form-control">
                         <span class="bar"></span>
                     </span>
 
                     <span class="field">
                         <label for="tel_or">Телефон</label>
-                        <input id="tel_or" placeholder="Твой номер телефона" type="tel" class="form-control" name="custom_tel" required="">
+                        <input id="tel_or" placeholder="Твой номер телефона" type="tel" class="form-control" name="entry.1379813596" required="">
                         <span class="bar"></span>
                     </span>
 
