@@ -82,6 +82,27 @@ body.unscroll{
   background: $main_color;
 }
 
+.btn{
+	max-width: 350px;
+    width: 100%;
+    height: 50px;
+    border-radius: 24px;
+    background-color: #fded35;
+
+    color: #352b33;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: #f5c0d0;
+    color: #fff;
+}
+
+.btn:active{
+    background-color: #dfafbd;
+}
+
 #sec_01{
     background-repeat: no-repeat;
     background-position: top -30px center;
@@ -92,7 +113,7 @@ body.unscroll{
     min-height: 100vh;
 
     .logo{margin-bottom: 140px;}
-    .header_sm{margin-bottom: 245px;}
+    .header_sm{margin-bottom: 75px;}
 
     .menu{
         font-size: 14px;
@@ -147,9 +168,9 @@ body.unscroll{
     }
 
     .result{
-        margin-top: 165px;
         font-size: 36px;
         line-height: 69px;
+        margin-bottom: 200px;
         #result{
             font-size: 120px;
             position: relative;
@@ -168,9 +189,15 @@ body.unscroll{
     }
 
     .item{
-        margin: 15px 0 155px 95px;
+        margin: 15px 0 45px 95px;
         max-width: 380px;
         .title{margin-bottom: 20px;}
+
+        .text_cta{
+            max-width: 400px;
+            margin: 70px auto 30px;
+            line-height: 22px;
+        }
     }
 
     .btn_back{
@@ -178,6 +205,16 @@ body.unscroll{
         img{margin: 0 0 -4px 8px}
         &:hover{color: $main_color;}
     }
+}
+
+
+.form_block{
+//   background-color: #f9f9fb;
+  margin-bottom: 60px;
+  .btn{
+    display: block;
+    margin: 45px auto 0;
+  }
 }
 
 footer{
@@ -214,20 +251,18 @@ footer{
   }
 }
 
+@media (min-width: 992px) and (max-width: 1200px){
+    #sec_01{
+        .sec_text{display: none}
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991px){
     #sec_01{
         padding-bottom: 100px;
         .item{margin-left: 30px;}
         .sec_text{display: none}
         .logo{margin-bottom: 100px;}
-        .header_sm{margin-bottom: 350px;}
-        .result{
-            margin-top: 140px;
-            #result{
-                font-size: 95px;
-                &:before{display: none}
-            }
-        }
     }
   footer{
     .politics a{
@@ -246,14 +281,11 @@ footer{
     background-position: top -200px center;
     padding-top: 20px;
     .logo{margin-bottom: 105px;}
-    .header_sm{margin-bottom: 350px;}
     .sec_text{display: none}
     .result{
         margin-left: 20px;
-        margin-top: 100px;
         #result{
-            font-size: 62px;
-            &:before{display: none}
+            font-size: 92px;
         }
     }
     .item{
@@ -295,13 +327,25 @@ footer{
       background-repeat: no-repeat;
       background-position: top center;
       background-image: url(../img/bg-mob.png);
+      background-color: #F6FCFD;
       padding-top: 20px;
       .menu{display: none;}
-      .logo{margin-bottom: 45px;}
-      .header_sm{margin-bottom: 40px;}
+      .logo{
+          margin-bottom: 45px;
+          display: block;
+          }
+      .header_sm{
+          margin-bottom: 40px;
+          display: inline-block;
+          }
+      .social{
+          margin-bottom: 30px;float: right;
+          }
       .result{
           margin-left: 0px;
           margin-top: 0;
+          margin-bottom: 30px;
+          display: inline-block;
           #result{
               font-size: 80px;
               &:before{display: none}
