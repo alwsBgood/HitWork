@@ -68,6 +68,24 @@ body.unscroll {
 ::-webkit-scrollbar-thumb:window-inactive {
   background: #dfafbd; }
 
+.btn {
+  max-width: 350px;
+  width: 100%;
+  height: 50px;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  background-color: #fded35;
+  color: #352b33;
+  font-size: 16px;
+  font-weight: 700; }
+
+.btn:hover {
+  background-color: #f5c0d0;
+  color: #fff; }
+
+.btn:active {
+  background-color: #dfafbd; }
+
 #sec_01 {
   background-repeat: no-repeat;
   background-position: top -30px center;
@@ -78,7 +96,7 @@ body.unscroll {
   #sec_01 .logo {
     margin-bottom: 140px; }
   #sec_01 .header_sm {
-    margin-bottom: 245px; }
+    margin-bottom: 75px; }
   #sec_01 .menu {
     font-size: 14px;
     position: relative; }
@@ -129,9 +147,9 @@ body.unscroll {
     top: 140px;
     right: -130px; }
   #sec_01 .result {
-    margin-top: 165px;
     font-size: 36px;
-    line-height: 69px; }
+    line-height: 69px;
+    margin-bottom: 200px; }
     #sec_01 .result #result {
       font-size: 120px;
       position: relative;
@@ -146,16 +164,26 @@ body.unscroll {
         bottom: 0;
         right: -85px; }
   #sec_01 .item {
-    margin: 15px 0 155px 95px;
+    margin: 15px 0 45px 95px;
     max-width: 380px; }
     #sec_01 .item .title {
       margin-bottom: 20px; }
+    #sec_01 .item .text_cta {
+      max-width: 400px;
+      margin: 70px auto 30px;
+      line-height: 22px; }
   #sec_01 .btn_back {
     float: right; }
     #sec_01 .btn_back img {
       margin: 0 0 -4px 8px; }
     #sec_01 .btn_back:hover {
       color: #dfafbd; }
+
+.form_block {
+  margin-bottom: 60px; }
+  .form_block .btn {
+    display: block;
+    margin: 45px auto 0; }
 
 footer {
   position: absolute;
@@ -185,6 +213,10 @@ footer {
     footer .logo_rezart:hover svg {
       fill: #dfafbd; }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  #sec_01 .sec_text {
+    display: none; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   #sec_01 {
     padding-bottom: 100px; }
@@ -194,14 +226,6 @@ footer {
       display: none; }
     #sec_01 .logo {
       margin-bottom: 100px; }
-    #sec_01 .header_sm {
-      margin-bottom: 350px; }
-    #sec_01 .result {
-      margin-top: 140px; }
-      #sec_01 .result #result {
-        font-size: 95px; }
-        #sec_01 .result #result:before {
-          display: none; }
   footer .politics a {
     font-size: 13px; } }
 
@@ -215,17 +239,12 @@ footer {
     padding-top: 20px; }
     #sec_01 .logo {
       margin-bottom: 105px; }
-    #sec_01 .header_sm {
-      margin-bottom: 350px; }
     #sec_01 .sec_text {
       display: none; }
     #sec_01 .result {
-      margin-left: 20px;
-      margin-top: 100px; }
+      margin-left: 20px; }
       #sec_01 .result #result {
-        font-size: 62px; }
-        #sec_01 .result #result:before {
-          display: none; }
+        font-size: 92px; }
     #sec_01 .item {
       margin-left: 20px;
       margin-bottom: 80px; }
@@ -258,16 +277,24 @@ footer {
     background-repeat: no-repeat;
     background-position: top center;
     background-image: url(../img/bg-mob.png);
+    background-color: #F6FCFD;
     padding-top: 20px; }
     #sec_01 .menu {
       display: none; }
     #sec_01 .logo {
-      margin-bottom: 45px; }
+      margin-bottom: 45px;
+      display: block; }
     #sec_01 .header_sm {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      display: inline-block; }
+    #sec_01 .social {
+      margin-bottom: 30px;
+      float: right; }
     #sec_01 .result {
       margin-left: 0px;
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 30px;
+      display: inline-block; }
       #sec_01 .result #result {
         font-size: 80px; }
         #sec_01 .result #result:before {
